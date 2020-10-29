@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C7073A6E2538B8EF0068B4E5"
-               BuildableName = "ABSwiftKitExtensionExample.app"
-               BlueprintName = "ABSwiftKitExtensionExample"
+               BlueprintIdentifier = "ABSwiftKitExtension::ABSwiftKitExtension"
+               BuildableName = "ABSwiftKitExtension.framework"
+               BlueprintName = "ABSwiftKitExtension"
                ReferencedContainer = "container:ABSwiftKitExtension.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C7073A6E2538B8EF0068B4E5"
-            BuildableName = "ABSwiftKitExtensionExample.app"
-            BlueprintName = "ABSwiftKitExtensionExample"
-            ReferencedContainer = "container:ABSwiftKitExtension.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C7073A6E2538B8EF0068B4E5"
-            BuildableName = "ABSwiftKitExtensionExample.app"
-            BlueprintName = "ABSwiftKitExtensionExample"
+            BlueprintIdentifier = "ABSwiftKitExtension::ABSwiftKitExtension"
+            BuildableName = "ABSwiftKitExtension.framework"
+            BlueprintName = "ABSwiftKitExtension"
             ReferencedContainer = "container:ABSwiftKitExtension.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 extension UIDevice {
     public enum `Type` {
         case iPad
@@ -49,3 +50,4 @@ extension UIDevice {
         return .iPad
     }
 }
+#endif

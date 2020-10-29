@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ABSwiftKitExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>ABSwiftKitExtensionExample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>ABSwiftKitExtension::ABSwiftKitExtension</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C7073A6E2538B8EF0068B4E5</key>
 		<dict>
 			<key>primary</key>

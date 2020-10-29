@@ -27,11 +27,11 @@
 		C7073A792538B8F00068B4E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7073A782538B8F00068B4E5 /* Preview Assets.xcassets */; };
 		C7073A842538B8F00068B4E5 /* ABSwiftKitExtensionExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7073A832538B8F00068B4E5 /* ABSwiftKitExtensionExampleTests.swift */; };
 		C7073A8F2538B8F00068B4E5 /* ABSwiftKitExtensionExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7073A8E2538B8F00068B4E5 /* ABSwiftKitExtensionExampleUITests.swift */; };
-		C793623A2538BBA900FD334F /* ABSwiftKitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */; };
-		C793623B2538BBA900FD334F /* ABSwiftKitExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C7AFA83A254327E700D6B8C8 /* DeviceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AFA837254327E600D6B8C8 /* DeviceModifier.swift */; };
 		C7AFA83B254327E700D6B8C8 /* UIDevice+ABSwiftKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AFA838254327E600D6B8C8 /* UIDevice+ABSwiftKitExtension.swift */; };
 		C7AFA83C254327E700D6B8C8 /* HiddenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AFA839254327E700D6B8C8 /* HiddenModifier.swift */; };
+		C7BA6E062545E5D3004F3628 /* ABSwiftKitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */; };
+		C7BA6E072545E5D3004F3628 /* ABSwiftKitExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = "ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_24 /* ABSwiftKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ABSwiftKitExtension.swift */; };
 		OBJ_25 /* View+ABSwiftKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* View+ABSwiftKitExtension.swift */; };
 		OBJ_32 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -69,7 +69,7 @@
 			remoteGlobalIDString = C7073A6E2538B8EF0068B4E5;
 			remoteInfo = ABSwiftKitExtensionExample;
 		};
-		C793623C2538BBA900FD334F /* PBXContainerItemProxy */ = {
+		C7BA6E082545E5D3004F3628 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -79,13 +79,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C793623E2538BBA900FD334F /* Embed Frameworks */ = {
+		C7BA6E0A2545E5D3004F3628 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C793623B2538BBA900FD334F /* ABSwiftKitExtension.framework in Embed Frameworks */,
+				C7BA6E072545E5D3004F3628 /* ABSwiftKitExtension.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,8 +93,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		"ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ABSwiftKitExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ABSwiftKitExtension::ABSwiftKitExtensionTests::Product" /* ABSwiftKitExtensionTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = ABSwiftKitExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ABSwiftKitExtension::ABSwiftKitExtension::Product" /* ABSwiftKitExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ABSwiftKitExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"ABSwiftKitExtension::ABSwiftKitExtensionTests::Product" /* ABSwiftKitExtensionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ABSwiftKitExtensionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7073A6F2538B8EF0068B4E5 /* ABSwiftKitExtensionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABSwiftKitExtensionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7073A712538B8EF0068B4E5 /* ABSwiftKitExtensionExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSwiftKitExtensionExampleApp.swift; sourceTree = "<group>"; };
 		C7073A732538B8EF0068B4E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +110,7 @@
 		C7AFA837254327E600D6B8C8 /* DeviceModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModifier.swift; sourceTree = "<group>"; };
 		C7AFA838254327E600D6B8C8 /* UIDevice+ABSwiftKitExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+ABSwiftKitExtension.swift"; sourceTree = "<group>"; };
 		C7AFA839254327E700D6B8C8 /* HiddenModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HiddenModifier.swift; sourceTree = "<group>"; };
+		C7BA6DED2545E56E004F3628 /* ABSwiftKitExtensionExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ABSwiftKitExtensionExample.entitlements; sourceTree = "<group>"; };
 		OBJ_10 /* View+ABSwiftKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ABSwiftKitExtension.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* ABSwiftKitExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSwiftKitExtensionTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
@@ -123,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C793623A2538BBA900FD334F /* ABSwiftKitExtension.framework in Frameworks */,
+				C7BA6E062545E5D3004F3628 /* ABSwiftKitExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +163,7 @@
 		C7073A702538B8EF0068B4E5 /* ABSwiftKitExtensionExample */ = {
 			isa = PBXGroup;
 			children = (
+				C7BA6DED2545E56E004F3628 /* ABSwiftKitExtensionExample.entitlements */,
 				C7073A712538B8EF0068B4E5 /* ABSwiftKitExtensionExampleApp.swift */,
 				C7073A732538B8EF0068B4E5 /* ContentView.swift */,
 				C7073A752538B8F00068B4E5 /* Assets.xcassets */,
@@ -326,12 +328,12 @@
 				C7073A6B2538B8EF0068B4E5 /* Sources */,
 				C7073A6C2538B8EF0068B4E5 /* Frameworks */,
 				C7073A6D2538B8EF0068B4E5 /* Resources */,
-				C793623E2538BBA900FD334F /* Embed Frameworks */,
+				C7BA6E0A2545E5D3004F3628 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C793623D2538BBA900FD334F /* PBXTargetDependency */,
+				C7BA6E092545E5D3004F3628 /* PBXTargetDependency */,
 			);
 			name = ABSwiftKitExtensionExample;
 			productName = ABSwiftKitExtensionExample;
@@ -382,7 +384,7 @@
 			attributes = {
 				LastSwiftMigration = 9999;
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					C7073A6E2538B8EF0068B4E5 = {
 						CreatedOnToolsVersion = 12.1;
@@ -409,6 +411,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_15 /* Products */;
@@ -520,10 +523,10 @@
 			target = C7073A6E2538B8EF0068B4E5 /* ABSwiftKitExtensionExample */;
 			targetProxy = C7073A8B2538B8F00068B4E5 /* PBXContainerItemProxy */;
 		};
-		C793623D2538BBA900FD334F /* PBXTargetDependency */ = {
+		C7BA6E092545E5D3004F3628 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "ABSwiftKitExtension::ABSwiftKitExtension" /* ABSwiftKitExtension */;
-			targetProxy = C793623C2538BBA900FD334F /* PBXContainerItemProxy */;
+			targetProxy = C7BA6E082545E5D3004F3628 /* PBXContainerItemProxy */;
 		};
 		OBJ_37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -572,6 +575,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ABSwiftKitExtensionExample/ABSwiftKitExtensionExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ABSwiftKitExtensionExample/Preview Content\"";
 				DEVELOPMENT_TEAM = 292J49Y2B4;
@@ -599,9 +603,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.aben.ABSwiftKitExtensionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -639,6 +644,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = ABSwiftKitExtensionExample/ABSwiftKitExtensionExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_ASSET_PATHS = "\"ABSwiftKitExtensionExample/Preview Content\"";
@@ -662,8 +668,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.aben.ABSwiftKitExtensionExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -925,6 +932,7 @@
 		OBJ_21 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -953,6 +961,7 @@
 		OBJ_22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -991,17 +1000,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -1039,15 +1075,41 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1062,8 +1124,8 @@
 		OBJ_40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1087,8 +1149,8 @@
 		OBJ_41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

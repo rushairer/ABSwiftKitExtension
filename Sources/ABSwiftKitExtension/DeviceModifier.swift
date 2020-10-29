@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+#if os(iOS)
 public struct PhoneOnlyModifier: ViewModifier {
     public func body(content: Content) -> some View {
         Group {
@@ -54,6 +55,7 @@ public struct NotTopNotchOnlyModifier: ViewModifier {
         }
     }
 }
+#endif
 
 public struct EdgesIgnoringSafeAreaModifier: ViewModifier {
     private let edges: Edge.Set
