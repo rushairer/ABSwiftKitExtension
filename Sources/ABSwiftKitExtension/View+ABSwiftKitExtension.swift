@@ -39,11 +39,11 @@ extension View {
         }
     }
     
-    public func appStoreOverlaySafety(isPresented: Binding<Bool>, appIdentifier: String) -> some View {
+    public func appStoreOverlaySafety(isPresented: Binding<Bool>, appIdentifier: String? = nil) -> some View {
         Group {
             if #available(iOS 14.0, *) {
                 self.appStoreOverlay(isPresented: isPresented) {
-                    SKOverlay.AppConfiguration(appIdentifier: appIdentifier, position: .bottom)
+                    appIdentifier == nil ? SKOverlay.AppClipConfiguration(position: .bottom) : SKOverlay.AppConfiguration(appIdentifier: appIdentifier!, position: .bottom)
                 }.self
             } else {
                 self
