@@ -9,7 +9,7 @@ public enum RoundedSize: Float, CaseIterable, Codable, Hashable, RawRepresentabl
     case lg = 16.0
     case xl = 24.0
     case xxl = 32.0
-    func value(value: Float) -> Float {
+    public func value(value: Float) -> Float {
         return value
     }
 }
