@@ -55,7 +55,7 @@ extension View {
     
     @available(iOS, introduced: 13, deprecated: 14, message: "Use .ignoresSafeArea(.keyboard) directly")
     @ViewBuilder func ignoreKeyboard() -> some View {
-        if #available(iOS 14.0, *) {
+        if #available(iOS 14.0, watchOS 7.0, macOS 11.0, *) {
             ignoresSafeArea(.keyboard)
         } else {
             self // iOS 13 always ignores the keyboard
