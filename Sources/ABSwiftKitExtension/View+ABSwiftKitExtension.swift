@@ -25,12 +25,14 @@ extension View {
     ///
     /// Examples:
     ///     .clipRounded(.sm)
-    ///     .clipRounded(RoundedSize(rawValue: 40.0)!)
     ///
     public func clipRounded(_ size: RoundedSize = .md) -> some View {
+        self.clipRounded(CGFloat(size.rawValue))
+    }
+    
+    public func clipRounded(_ size: CGFloat) -> some View {
         self
-            .clipShape(RoundedRectangle(cornerRadius: CGFloat(size.rawValue),
-                                        style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: size, style: .continuous))
     }
     
     @ViewBuilder public func `if`<Transform: View>(_ condition: Bool, transform: (Self) -> Transform) -> some View {
