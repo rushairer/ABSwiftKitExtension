@@ -9,9 +9,7 @@ public enum RoundedSize: Float, CaseIterable, Codable, Hashable, RawRepresentabl
     case lg = 16.0
     case xl = 24.0
     case xxl = 32.0
-    public func value(value: Float) -> Float {
-        return value
-    }
+    case xxxl = 48.0
 }
 
 extension View {
@@ -23,6 +21,12 @@ extension View {
                     y: 5)
     }
     
+    /// A clipShape modifier.
+    ///
+    /// Examples:
+    ///     .clipRounded(.sm)
+    ///     .clipRounded(RoundedSize(rawValue: 40.0)!)
+    ///
     public func clipRounded(_ size: RoundedSize = .md) -> some View {
         self
             .clipShape(RoundedRectangle(cornerRadius: CGFloat(size.rawValue),
