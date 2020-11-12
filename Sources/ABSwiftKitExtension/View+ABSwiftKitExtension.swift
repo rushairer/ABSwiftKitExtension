@@ -84,9 +84,13 @@ extension View {
     @available(iOS, introduced: 13, deprecated: 14, message: "Use appStoreOverlay(isPresented:appIdentifier) directly")
     @ViewBuilder public func appStoreOverlayDirectly(isPresented: Binding<Bool>, appIdentifier: String? = nil) -> some View {
         if #available(iOS 14.0, *) {
+            #if targetEnvironment(macCatalyst) 
+            self
+            #else
             self.appStoreOverlay(isPresented: isPresented) {
                 appIdentifier == nil ? SKOverlay.AppClipConfiguration(position: .bottom) : SKOverlay.AppConfiguration(appIdentifier: appIdentifier!, position: .bottom)
             }.self
+            #endif
         } else {
             self
         }

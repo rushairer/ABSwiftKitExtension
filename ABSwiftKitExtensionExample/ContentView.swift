@@ -14,6 +14,7 @@ struct ContentView: View {
             List {
                 TagView(title: "UIScreen.main.nativeBounds.height: \(Int(UIScreen.main.nativeBounds.height))", backgroundColor: .blue)
                 
+                
                 TagView(title: "Has Top Notch", backgroundColor: .green)
                     .modifier(HiddenModifier(isHidden: !UIDevice.current.hasTopNotch, remove: true))
                 
