@@ -51,12 +51,44 @@ extension View {
         }
     }
     
-    @ViewBuilder func ifLet<V, Transform: View>(_ value: V?, transform: (Self, V) -> Transform) -> some View {
+    @ViewBuilder public func ifLet<V, Transform: View>(_ value: V?, transform: (Self, V) -> Transform) -> some View {
         if let value = value {
             transform(self, value)
         } else {
             self
         }
+    }
+    
+    @ViewBuilder public func iOSVersion<ContentFor14later: View, ContentFor14: View>(contentFor14later: (Self) -> ContentFor14later, or contentFor14: (Self) -> ContentFor14) -> some View {
+        if #available(iOS 14.0, watchOS 7.0, macOS 11.0, *) {
+            contentFor14(self)
+        } else {
+            contentFor14later(self)
+        }
+    }
+    
+    @ViewBuilder public func onlyForAppClip<Transform: View>(transform: (Self) -> Transform) -> some View {
+        #if APPCLIP
+        transform(self)
+        #else
+        self
+        #endif
+    }
+    
+    @ViewBuilder public func onlyForDebug<Transform: View>(transform: (Self) -> Transform) -> some View {
+        #if DEBUG
+        transform(self)
+        #else
+        self
+        #endif
+    }
+    
+    @ViewBuilder public func notForAppClip<Transform: View>(transform: (Self) -> Transform) -> some View {
+        #if !APPCLIP
+        transform(self)
+        #else
+        self
+        #endif
     }
     
     @available(iOS, introduced: 13, deprecated: 14, message: "Use .ignoresSafeArea(.keyboard) directly")
