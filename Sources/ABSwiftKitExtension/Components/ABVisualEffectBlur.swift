@@ -1,6 +1,5 @@
 import SwiftUI
-import UIKit.UIVibrancyEffect
-import UIKit.UIBlurEffect
+import UIKit
 
 // MARK: - VisualEffectBlur
 
