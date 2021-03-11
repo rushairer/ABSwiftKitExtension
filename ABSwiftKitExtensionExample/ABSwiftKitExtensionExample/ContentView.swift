@@ -72,7 +72,7 @@ struct ContentView: View {
             Button("ABButtonStyle") {
                 
             }
-            .buttonStyle(ABButtonStyle())
+            .buttonStyle(ABButtonStyle(cornerRadius: 0))
             .accentColor(.red)
             
             Button("ABListButtonStyle") {

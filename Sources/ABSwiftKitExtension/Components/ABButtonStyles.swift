@@ -1,12 +1,14 @@
 import SwiftUI
 
 public struct ABButtonStyle: ButtonStyle {
-    var horizontalPadding: CGFloat = 14
-    var verticalPadding: CGFloat = 12
-    var cornerRadius: CGFloat = 8
+    var horizontalPadding: CGFloat
+    var verticalPadding: CGFloat
+    var cornerRadius: CGFloat
     
-    public init() {
-        
+    public init(horizontalPadding: CGFloat = 14, verticalPadding: CGFloat = 12, cornerRadius: CGFloat = 8) {
+        self.horizontalPadding = horizontalPadding
+        self.verticalPadding = verticalPadding
+        self.cornerRadius = cornerRadius
     }
     
     public func makeBody(configuration: Self.Configuration) -> some View {
@@ -20,12 +22,14 @@ public struct ABButtonStyle: ButtonStyle {
 }
 
 public struct ABListButtonStyle: ButtonStyle {
-    var backgroundColor: Color = Color.accentColor
-    var horizontalPadding: CGFloat = 14
-    var verticalPadding: CGFloat = 12
+    var backgroundColor: Color
+    var horizontalPadding: CGFloat
+    var verticalPadding: CGFloat
     
-    public init() {
-        
+    public init(backgroundColor: Color = Color.accentColor, horizontalPadding: CGFloat = 14, verticalPadding: CGFloat = 12) {
+        self.backgroundColor = backgroundColor
+        self.horizontalPadding = horizontalPadding
+        self.verticalPadding = verticalPadding
     }
     
     public func makeBody(configuration: Self.Configuration) -> some View {
@@ -41,13 +45,16 @@ public struct ABListButtonStyle: ButtonStyle {
 }
 
 public struct ABBorderButtonStyle: ButtonStyle {
-    var horizontalPadding: CGFloat = 14
-    var verticalPadding: CGFloat = 12
-    var cornerRadius: CGFloat = 8
-    var borderWidth: CGFloat = 2
+    var horizontalPadding: CGFloat
+    var verticalPadding: CGFloat
+    var cornerRadius: CGFloat
+    var borderWidth: CGFloat
     
-    public init() {
-        
+    public init(horizontalPadding: CGFloat = 14, verticalPadding: CGFloat = 12, cornerRadius: CGFloat = 8, borderWidth: CGFloat = 2) {
+        self.horizontalPadding = horizontalPadding
+        self.verticalPadding = verticalPadding
+        self.cornerRadius = cornerRadius
+        self.borderWidth = borderWidth
     }
     
     public func makeBody(configuration: Self.Configuration) -> some View {
