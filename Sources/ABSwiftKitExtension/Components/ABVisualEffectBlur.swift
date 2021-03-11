@@ -1,6 +1,5 @@
 import SwiftUI
-import UIKit
-
+#if os(iOS)
 // MARK: - VisualEffectBlur
 
 public struct ABVisualEffectBlur<Content: View>: View {
@@ -83,3 +82,5 @@ extension ABVisualEffectBlur where Content == EmptyView {
         }
     }
 }
+#endif
+
