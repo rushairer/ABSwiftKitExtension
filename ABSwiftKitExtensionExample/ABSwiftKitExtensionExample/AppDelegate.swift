@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  ABSwiftKitExtensionExample-iOS
+//  ABSwiftKitExtensionExample
 //
 //  Created by Abenx on 2021/3/11.
 //
