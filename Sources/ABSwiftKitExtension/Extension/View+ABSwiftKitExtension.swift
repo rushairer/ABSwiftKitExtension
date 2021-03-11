@@ -1,5 +1,6 @@
 import SwiftUI
-#if os(iOS)
+
+#if canImport(StoreKit)
 import StoreKit
 #endif
 
@@ -56,14 +57,6 @@ extension View {
             transform(self, value)
         } else {
             self
-        }
-    }
-    
-    @ViewBuilder public func iOSVersion<ContentFor14later: View, ContentFor14: View>(contentFor14later: (Self) -> ContentFor14later, or contentFor14: (Self) -> ContentFor14) -> some View {
-        if #available(iOS 14.0, watchOS 7.0, macOS 11.0, *) {
-            contentFor14(self)
-        } else {
-            contentFor14later(self)
         }
     }
     

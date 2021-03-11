@@ -20,6 +20,26 @@ struct ContentView: View {
                 
                 TagView(title: "Do Not Has Top Notch", backgroundColor: .red)
                     .modifier(HiddenModifier(isHidden: UIDevice.current.hasTopNotch, remove: true))
+                
+                Button("ABButtonStyle") {
+                    
+                }.buttonStyle(ABButtonStyle())
+                
+                Button("ABButtonStyle") {
+                    
+                }.buttonStyle(ABButtonStyle())
+                .accentColor(.blue)
+                
+                Button("ABListButtonStyle") {
+                }.buttonStyle(ABListButtonStyle())
+                
+                Button("ABBorderButtonStyle") {
+                    
+                }.buttonStyle(ABBorderButtonStyle())
+                
+                Button("ABListButtonStyle") {
+                    
+                }.buttonStyle(ABListButtonStyle())
             }
             .navigationBarTitle("Example")
         }
@@ -36,6 +56,11 @@ struct TagView: View {
             .background(self.backgroundColor)
             .clipRounded(.sm)
             .opacityShadow()
+            .iOSVersion { view in
+                view
+            } orFor14Later: { view in
+                view.ignoresSafeArea()
+            }
     }
 }
 
